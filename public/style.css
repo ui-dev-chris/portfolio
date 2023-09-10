@@ -1,0 +1,433 @@
+:root{
+    --colorPrimaire : #252b57;
+    --colorSecondaire: #fc8d26 ;
+}
+
+
+.conteneur{
+    padding: 0 5%;
+}
+
+/* -------------------------------------------------------
+
+------------------------------------------------------- */
+
+/* nav bar */
+nav{
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #fff;
+    background-color: var(--colorPrimaire);
+    z-index: 5;
+}
+
+
+/* nav logo */
+nav .logo{
+    font-weight: bold;
+    font-size: 20px;
+
+    z-index: 6;
+}
+
+/* nav links */
+nav a.link{
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 18px 0;
+
+    color: #ddd;
+    transition: color 300ms;
+}
+
+nav a.link:hover{
+    color: #ffffff;
+    border-bottom: 2px solid #fff;
+}
+
+
+nav a.connexion{
+    padding: 8px;
+
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+}
+
+/* nav rigth */
+nav .nav-right{
+    display: none;
+}
+
+
+/* -----------------------------------------------------
+
+----------------------------------------------------- */
+/* header */
+header{
+    width: 100%;
+    height: 80vh;
+    padding: 0 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--colorPrimaire);
+    /* background-image: url('./baxk.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+header .row{
+    width: 100%;
+}
+
+/* contain header */
+header .contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+
+header .contain p{
+    margin-bottom: 40px;
+}
+
+header .contain h1{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+/* ** contain btn header **/
+/*
+header .contain .btn-contain{
+    display: block;
+    flex-wrap: wrap;
+}
+*/
+
+/* btn decouverte */
+header .contain a.btn-decouverte{
+    text-decoration: none;
+    padding: 20px 40px;
+
+    color: #fff;
+    background-color: var(--colorSecondaire);
+    border-radius: 0.25rem;
+}
+
+/* imgae header */
+header .image{
+    width: 50%;
+    height: 80vh;
+
+    /* background-image: url('./computer.png'); */
+    background-image: url('./profilNB.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* header svg */
+header svg.wave{
+    position: absolute;
+    bottom: 0;
+
+    fill: #fff;
+}
+
+
+header svg.mouse{
+    width: 50px;
+    position: absolute;
+    bottom: 30px;
+
+    fill: var(--colorSecondaire);
+    z-index: 1;
+}
+
+
+/* -----------------------------------------------------
+            SECTION MAPPING
+----------------------------------------------------- */
+section.mapping{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: center;
+    
+    /* background-color: #252b57; */
+    
+}
+
+/* h2 section.mapping */
+section.mapping h2{
+    margin: 20px 0;
+}
+
+section p{
+    color: #555555;
+}
+
+/* contain section.mapping */
+section.mapping .contain {
+    padding: 20px;
+}
+
+section.mapping .contain a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+
+    color: #444;
+    /* background-color: var(--colorPrimaire); */
+    border-radius: 0.25rem;
+    background-color: #ddd;
+}
+
+
+/* svg section.mapping */
+section.mapping svg{
+    width: 80px;
+}
+
+/* -----------------------------------------------------
+            SECTION DECOUVERTE
+----------------------------------------------------- */
+section.decouverte{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    /* background-color: #afb5e0; */
+}
+
+section.decouverte .contain{
+    width: 50%;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* image section */
+section .image{
+    height: 50vh;
+
+    /* background-color: #444a7c; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section .img1{
+    background-image: url('./pencil-revision-svgrepo-com.svg');
+}
+
+
+section .img2{
+    background-image: url('./camera.svg');
+}
+
+section .img3{
+    background-image: url('./calendar-svgrepo-com.svg');
+}
+
+section .img4{
+    background-image: url('./headphones-music-svgrepo-com.svg');
+}
+
+/* ********************************** **/
+
+footer{
+    width: 100%;
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+    background-color: var(--colorPrimaire);
+}
+
+footer div{
+    width: 50%;
+}
+
+/* ****************************************************** */
+
+
+/* -----------------------------------------------------
+
+----------------------------------------------------- */
+@media (max-width: 650px) {
+
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    /* nav menu */
+    nav .menu{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: -100vh;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        background-color: blueviolet;
+        z-index: 5;
+
+        transition: 300ms;
+    }
+
+
+    /* nav rigth */
+    nav .nav-right{
+        display: block;
+    }
+
+    /* nav btn close */
+    nav .btn-menu-close svg{
+        width: 25px;
+        position: fixed;
+        top: -100vh;
+        right: 5%;
+        margin-top: 18px;
+
+        fill: #fff;
+        z-index: 6;
+
+        transition: 300ms;
+    }
+
+    nav a.connexion{
+        margin-top: 20px;
+    }
+
+    nav .btn-menu-toggle{
+        width: 30px;
+        position: fixed;
+        top: 18px;
+        right: 5%;
+
+        stroke: #ffffff;
+        z-index: 2;
+    }
+
+
+    /* ******************************
+
+    ****************************** */
+    header{
+        height: 100vh;
+    }
+
+    header .contain{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    header .contain h1{
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    /* btn decouverte */
+    header .contain a.btn-link{
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+
+    header .image{
+        display: none;
+        /*
+        width: 100%;
+        height: 50vh;
+
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        */
+    }
+
+    /* bontain btn-contain */
+    header .contain .btn-contain{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*
+    header .contain a.btn-decouverte{
+        
+    }
+    */
+
+    /* *******************************
+        SECTION DECOUVERTE
+    ******************************* */
+    section.decouverte .contain{
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 450px) {
+
+    header .contain h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    /* btn decouverte */
+    header .contain a.btn-link{
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+
+    header .image{
+    width: 100%;
+    height: 45vh;
+
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    
+
+    footer{
+        display: block;
+    }
+
+
+}
